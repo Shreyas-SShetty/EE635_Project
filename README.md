@@ -16,7 +16,7 @@ It reads an audio file, identifies the most relevant frequencies , and then uses
 2.  **Place Audio File:** Ensure the file is in the same directory.
 3.  **Run in MATLAB:** Open MATLAB, navigate to the directory, and run the script by typing the filename in the Command Window:
     ```matlab
-    audio_reconstruction
+    orthogonalDecomoposition
     ```
 
 ## Key Parameters
