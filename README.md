@@ -1,5 +1,5 @@
 # EE635_Project
-ODAV (Audio Signal Reconstruction using Fourier Series Projection)
+##ODAV (Audio Signal Reconstruction using Fourier Series Projection)
 
 This MATLAB script demonstrates how to reconstruct an audio signal by projecting it onto a basis of sinusoidal (sine and cosine) functions, effectively performing a truncated **Fourier Series Expansion**.
 
