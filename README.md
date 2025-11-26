@@ -12,14 +12,14 @@ It reads an audio file, identifies the most relevant frequencies , and then uses
 
 ## How to Use the Script
 
-1.  **Save the Code:** Save the provided MATLAB code as a `.m` file (e.g., `audio_reconstruction.m`).
+1.  **Save the Code:** Save the provided MATLAB code as a `orthogonalDecomposition.m` file.
 2.  **Place Audio File:** Ensure the file is in the same directory.
 3.  **Run in MATLAB:** Open MATLAB, navigate to the directory, and run the script by typing the filename in the Command Window:
     ```matlab
-    orthogonalDecomoposition
+    orthogonalDecomposition
     ```
 
-## Key Parameters
+Key Parameters
 
 You can adjust the signal processing behavior by modifying the parameters at the start of the script:
 
@@ -38,7 +38,7 @@ The script operates on the principle of **signal approximation** using a basis, 
 
 The script uses a set of basis vectors derived from the prominent frequencies:
 * **DC Component:** A constant vector of ones.
-* **AC Components:** Pairs of **sine** and **cosine** waves ($\cos(2 \pi f_k t)$ and ($\sin(2 \pi f_k t)$) for each prominent frequency $f_k$.
+* **AC Components:** Pairs of **sine** and **cosine** waves ($\cos(2 \pi f_k t)$ and $\sin(2 \pi f_k t)$ for each prominent frequency $f_k$).
 
 ### 2. Identifying Prominent Frequencies (`blackBox` Function)
 
@@ -75,11 +75,7 @@ The script dynamically plots the:
 * **Error Signal:** The difference between the original and reconstructed signals ($\mathbf{y}_{\text{clipped}} - \mathbf{y}_{\text{reconstructed}}$).
 * **RMSE Error:** The Root Mean Square Error (RMSE) is calculated and displayed, quantifying the quality of the reconstruction.
 
-As `k` (the number of basis vectors) increases, you will observe the reconstructed signal getting closer to the original, and the RMS error decreasing, illustrating the power of Fourier analysis.
-
-
-
-
+As `k` (the number of basis vectors) increases, you will observe the reconstructed signal getting closer to the original, and the RMS error decreasing.
 
 
 
