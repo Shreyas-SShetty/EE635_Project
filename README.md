@@ -1,4 +1,4 @@
-# Linear Algebra Experiments - Demo
+# Linear Algebra Experiments - With Demo
 ## Experiment 1 - Audio Signal Reconstruction using Fourier Series Projection
 
 This MATLAB script demonstrates how to reconstruct an audio signal by projecting it onto a basis of sinusoidal (sine and cosine) functions, effectively performing a truncated **Fourier Series Expansion**.
@@ -92,27 +92,30 @@ https://github.com/user-attachments/assets/702250d6-fbcc-4eee-9b4c-6076da977e20
 This project demonstrates population migration between two cities **A** and **B** using a **Markov Chain** model.
 
 ### Transition Matrix
-We define the population transition as:
 
-\[
+<p align="start">
+\( 
 P = \begin{bmatrix}
 0.8 & 0.1 \\
 0.2 & 0.9
 \end{bmatrix}
-\]
+\)
+</p>
 
 Here, each column sums to 1 (law of total probability).  
-The matrix is **ergodic**, meaning repeated multiplications lead to a **steady-state** distribution.
+The matrix is **ergodic**, meaning repeated multiplications lead to a **steady-state** distribution. Further details are mentioned in report.
 
 ### Steady-State
 The stationary distribution is given by the eigenvector corresponding to eigenvalue 1:
 
-\[
+<p align="start">
+\( 
 \pi = \begin{bmatrix}
 \frac{1}{2} \\
 \frac{1}{2}
 \end{bmatrix}
-\]
+\)
+</p>
 
 No matter the initial population distribution, the system converges to this equilibrium after several iterations.
 
