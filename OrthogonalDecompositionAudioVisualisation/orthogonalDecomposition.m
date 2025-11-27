@@ -27,7 +27,7 @@ xlabel('Time (seconds)');
 ylabel('Amplitude');
 title('Audio Signal Waveform');
 drawnow;
-
+pause(10)
 
 % Reconstruction using Projection
 y_reconstructed = zeros(L, 1);
@@ -61,7 +61,7 @@ for k = 1:basisDimension
         xlabel('Time (seconds)');
         ylabel('Amplitude');
         legend('Original Signal', 'Reconstructed Signal');
-        title(['Number of basis vectors = ', num2str(k)]);
+        title(['Number of basis vectors = ', num2str(2*k+1)]);
         drawnow;
         hold off;
 
@@ -70,7 +70,7 @@ for k = 1:basisDimension
         plot(time, error_signal, 'g--');
         xlabel('Time (seconds)');
         ylabel('Error Amplitude');
-        title({'Reconstruction Error Signal', [' RMSE error = ',num2str(sqrt(MSE))]});
+        title({'Reconstruction Error Signal', [' RMS error = ',num2str(sqrt(MSE))]});
         drawnow;
         pause(0.01)
         end
