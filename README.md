@@ -89,7 +89,7 @@ https://github.com/user-attachments/assets/702250d6-fbcc-4eee-9b4c-6076da977e20
 
 ## Population Migration Simulation using Markov Chains
 
-This project demonstrates population migration between two cities **A** and **B** using a **Markov Chain** model.
+This project demonstrates population migration between two cities A and B using a **Markov Chain** model.
 
 ### Transition Matrix
 
@@ -99,7 +99,7 @@ Here, each column sums to 1 (law of total probability).
 The matrix is **ergodic**, meaning repeated multiplications lead to a **steady-state** distribution. Further details are mentioned in report.
 
 ### Steady-State
-The stationary distribution is given by the eigenvector corresponding to eigenvalue 1:
+The stationary distribution is given by the eigenvector corresponding to eigenvalue 1 of the matrix:
 
 $` \begin{bmatrix}1 \\\ 2\end{bmatrix} `$
 
