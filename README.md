@@ -93,7 +93,7 @@ This project demonstrates population migration between two cities **A** and **B*
 
 ### Transition Matrix
 
-P = $\begin{bmatrix}0.8 & 0.1\\\0.2 & 0.9\end{bmatrix}$
+$` \begin{bmatrix}0.8 & 0.1\\\0.2 & 0.9\end{bmatrix} `$
 
 Here, each column sums to 1 (law of total probability).  
 The matrix is **ergodic**, meaning repeated multiplications lead to a **steady-state** distribution. Further details are mentioned in report.
@@ -101,7 +101,7 @@ The matrix is **ergodic**, meaning repeated multiplications lead to a **steady-s
 ### Steady-State
 The stationary distribution is given by the eigenvector corresponding to eigenvalue 1:
 
-$\begin{bmatrix}1 \\\ 2\end{bmatrix}$
+$` \begin{bmatrix}1 \\\ 2\end{bmatrix} `$
 
 No matter the initial population distribution, the system converges to this equilibrium after several iterations.
 
